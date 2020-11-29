@@ -1,9 +1,29 @@
 <template>
-  <div class="home"></div>
+  <div class="user-panel">
+    <div class="user-nick">{{ user.login }}</div>
+    <div class="user-name">{{ user.name }}</div>
+    <div class="user-company">{{ user.company }}</div>
+    <div class="user-repos">{{ user.repos }}</div>
+  </div>
 </template>
 
 <script>
+import { mapState } from "vuex";
+
 export default {
   name: "Home",
+  computed: {
+    ...mapState(["user"]),
+  },
 };
 </script>
+
+<style scoped>
+.user-panel {
+  padding: 2rem;
+  background: #444;
+  color: #f4f4f4;
+  border-radius: 2rem;
+  text-align: center;
+}
+</style>
