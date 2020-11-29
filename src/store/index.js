@@ -15,15 +15,24 @@ export default new Vuex.Store({
     repos: [],
   },
 
+  getters: {
+     getRepos: state => state.repos, 
+  },
+
   mutations: {
-    SET_REPOS: (state,repos) => {
-      return state.repos = repos
-    }
+    setRepos: (state,repos) => state.repos = repos,
   },
 
   actions: {
-
+    fetchData(store) {
+      fetch('https://api.github.com/users/Inza/repos')
+      .then(res => res.json())
+      .then(data => {
+        store.commit('setRepos',data)
+      })
+    }
   },
+
   modules: {
   }
 })
