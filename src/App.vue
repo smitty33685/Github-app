@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="nav">
-      <h2 class="logo">Public Repos</h2>
+      <h1 class="logo">Public Repos</h1>
       <div class="links">
         <router-link to="/">Home</router-link>
         <router-link to="/about">About App</router-link>
@@ -25,6 +25,10 @@
   line-height: 1.5;
 }
 
+body {
+  background: #dddada;
+}
+
 .container {
   max-width: 1100px;
   margin: auto;
@@ -34,8 +38,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
-  background: #333;
+  padding: 1.5rem 2rem;
+  background: #222;
   color: #f4f4f4;
   margin-bottom: 3rem;
 }
@@ -44,9 +48,10 @@
   text-decoration: none;
   margin: 0 0.7rem;
   color: #f4f4f4;
+  text-transform: uppercase;
 }
 
 .nav a.router-link-exact-active {
-  text-decoration: underline;
+  color: #547dde;
 }
 </style>

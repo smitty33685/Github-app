@@ -1,11 +1,7 @@
 <template>
   <div>
     <UserPanel />
-    <!-- <router-link class="link" to="/">Back</router-link> -->
-    <!-- <div>{{ $route.params.index }}</div> -->
-    <!-- <div v-for="(branch, index) in getBranches" :key="index">
-      {{ branch.name }}
-    </div> -->
+    <Back />
     <div class="grid">
       <Branches />
       <Commits />
@@ -17,6 +13,7 @@
 import UserPanel from "../components/UserPanel";
 import Branches from "../components/Branches";
 import Commits from "../components/Commits";
+import Back from "../components/Back";
 // import { mapActions, mapGetters } from "vuex";
 
 export default {
@@ -25,6 +22,7 @@ export default {
     UserPanel,
     Branches,
     Commits,
+    Back,
   },
   //   computed: {
   //     ...mapGetters(["getBranches"]),
@@ -39,13 +37,9 @@ export default {
 </script>
 
 <style scoped>
-/* .link {
-  text-decoration: none;
-  color: #333;
-  margin-left: 3rem;
-} */
 .grid {
   display: grid;
   grid-template-columns: 40% 60%;
+  grid-gap: 2rem;
 }
 </style>

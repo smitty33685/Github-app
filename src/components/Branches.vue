@@ -1,8 +1,7 @@
 <template>
   <div>
-    <router-link class="link" to="/">Back</router-link>
-    <!-- <div>{{ $route.params.index }}</div> -->
-    <div v-for="(branch, index) in getBranches" :key="index">
+    <h2>Branches</h2>
+    <div class="item" v-for="(branch, index) in getBranches" :key="index">
       {{ branch.name }}
     </div>
   </div>
@@ -26,9 +25,15 @@ export default {
 </script>
 
 <style scoped>
-.link {
-  text-decoration: none;
-  color: #333;
-  margin-left: 3rem;
+.item {
+  background: #999;
+  margin: auto;
+  padding: 0.3rem 1rem;
+  margin: 0.3rem 0;
+  border-radius: 1rem;
+}
+
+h2 {
+  text-align: center;
 }
 </style>

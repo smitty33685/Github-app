@@ -4,7 +4,7 @@
       <div class="user-nick">{{ user.login }}</div>
       <div class="user-name">{{ user.name }}</div>
       <div class="user-company">{{ user.company }}</div>
-      <div class="user-repos">{{ user.repos }}</div>
+      <div class="user-repos">Repos: {{ user.repos }}</div>
     </div>
   </div>
 </template>
@@ -23,7 +23,9 @@ export default {
 <style scoped>
 .user-panel {
   padding: 2rem;
-  background: #444;
+  /* background: #4700b3; */
+  /* background: #163172; */
+  background: #163172;
   color: #f4f4f4;
   border-radius: 2rem;
   text-align: center;

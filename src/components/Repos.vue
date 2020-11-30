@@ -41,19 +41,16 @@ export default {
 
 .link {
   text-align: center;
-  background: #999;
+  /* background: #404040; */
+  background: #333;
+  color: #f4f4f4;
   padding: 1.3rem 1rem;
   border-radius: 1rem;
   cursor: pointer;
-  transition: all 0.3s;
-}
-
-a {
-  color: #333;
   text-decoration: none;
 }
 
-a:hover {
-  transform: scale(1.05);
+.link:hover {
+  background: #163172;
 }
 </style>
