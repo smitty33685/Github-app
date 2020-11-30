@@ -1,12 +1,39 @@
 <template>
-  <div>RepoDetail</div>
+  <div>
+    <UserPanel />
+    <router-link class="link" to="/">Back</router-link>
+    <!-- <div>{{ $route.params.index }}</div> -->
+    <div v-for="(branch, index) in getBranches" :key="index">
+      {{ branch.name }}
+    </div>
+  </div>
 </template>
 
 <script>
+import UserPanel from "../components/UserPanel";
+import { mapActions, mapGetters } from "vuex";
+
 export default {
   name: "repodetail",
+  components: {
+    UserPanel,
+  },
+  computed: {
+    ...mapGetters(["getBranches"]),
+  },
+  methods: {
+    ...mapActions(["fetchDataBranch"]),
+  },
+  created() {
+    this.fetchDataBranch(this.$route.params.index);
+  },
 };
 </script>
 
-<style>
+<style scoped>
+.link {
+  text-decoration: none;
+  color: #333;
+  margin-left: 3rem;
+}
 </style>

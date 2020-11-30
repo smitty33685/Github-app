@@ -1,12 +1,12 @@
 <template>
   <ul class="list-repos">
-    <!-- <li v-for="(repo, index) in getRepos" :key="index">
+    <!-- <li v-for="(repo, index) in getRepos" :key="index" @click="showName">
       {{ repo.name }} -->
     <router-link
       class="link"
       v-for="(repo, index) in getRepos"
       :key="index"
-      :to="`detail/${index}`"
+      :to="`/repos/${repo.name}`"
       >{{ repo.name }}</router-link
     >
     <!-- </li> -->
@@ -23,7 +23,11 @@ export default {
   },
   methods: {
     ...mapActions(["fetchData"]),
+    showName() {
+      console.log("john");
+    },
   },
+
   created() {
     this.fetchData();
   },
@@ -41,7 +45,7 @@ export default {
 .link {
   text-align: center;
   background: #999;
-  padding: 1rem;
+  padding: 1.3rem 1rem;
   border-radius: 1rem;
   cursor: pointer;
 }
