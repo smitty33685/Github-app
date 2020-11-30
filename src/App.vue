@@ -22,6 +22,7 @@
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
 }
 
 .container {
