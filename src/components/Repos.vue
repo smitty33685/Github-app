@@ -1,6 +1,15 @@
 <template>
   <ul class="list-repos">
-    <li v-for="(repo, index) in getRepos" :key="index">{{ repo.name }}</li>
+    <!-- <li v-for="(repo, index) in getRepos" :key="index">
+      {{ repo.name }} -->
+    <router-link
+      class="link"
+      v-for="(repo, index) in getRepos"
+      :key="index"
+      :to="`detail/${index}`"
+      >{{ repo.name }}</router-link
+    >
+    <!-- </li> -->
   </ul>
 </template>
 
@@ -29,11 +38,16 @@ export default {
   list-style: none;
 }
 
-li {
+.link {
   text-align: center;
   background: #999;
   padding: 1rem;
   border-radius: 1rem;
   cursor: pointer;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
 }
 </style>

@@ -8,7 +8,6 @@
 <script>
 import UserPanel from "../components/UserPanel";
 import Repos from "../components/Repos";
-import { mapState } from "vuex";
 
 export default {
   name: "Home",
@@ -16,24 +15,8 @@ export default {
     Repos,
     UserPanel,
   },
-  computed: {
-    ...mapState(["user"]),
-  },
 };
 </script>
 
 <style scoped>
-/* .user-panel {
-  padding: 2rem;
-  background: #444;
-  color: #f4f4f4;
-  border-radius: 2rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.user-nick {
-  font-size: 2.5rem;
-  text-transform: uppercase;
-} */
 </style>
