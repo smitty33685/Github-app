@@ -15,16 +15,19 @@ export default new Vuex.Store({
 
     repos: [],
     branches: [],
+    commits: [],
   },
 
   getters: {
     getRepos: state => state.repos,
     getBranches: state => state.branches,
+    getCommits: state => state.commits,
   },
 
   mutations: {
     setRepos: (state, depo) => state.repos = depo,
     setBranches: (state, branch) => state.branches = branch,
+    setCommits: (state, commit) => state.commits = commit,
   },
 
   actions: {
@@ -35,9 +38,13 @@ export default new Vuex.Store({
     fetchDataBranch(store, name) {
       GithubHttpService.fetchUserData(`https://api.github.com/repos/Inza/${name}/branches`)
         .then(data => store.commit('setBranches', data))
+    },
+    fetchDataCommit(store, name) {
+      GithubHttpService.fetchUserData(`https://api.github.com/repos/Inza/${name}/commits`)
+        .then(data => store.commit('setCommits', data))
     }
   },
 
-  modules: {
-  }
+  // modules: {
+  // }
 })

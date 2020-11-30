@@ -23,9 +23,6 @@ export default {
   },
   methods: {
     ...mapActions(["fetchData"]),
-    showName() {
-      console.log("john");
-    },
   },
 
   created() {
@@ -48,10 +45,15 @@ export default {
   padding: 1.3rem 1rem;
   border-radius: 1rem;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 a {
   color: #333;
   text-decoration: none;
+}
+
+a:hover {
+  transform: scale(1.05);
 }
 </style>
