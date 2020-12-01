@@ -21,7 +21,9 @@ export default new Vuex.Store({
   getters: {
     getRepos: state => state.repos,
     getBranches: state => state.branches,
-    getCommits: state => state.commits,
+    getCommits: state => state.commits.sort((d1, d2) => (
+      d1.commit.author.date > d2.commit.author.date ? -1 : 1)).splice(0, 10),
+
   },
 
   mutations: {

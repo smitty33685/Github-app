@@ -2,7 +2,7 @@
   <div>
     <h2>Branches</h2>
     <div class="item" v-for="(branch, index) in getBranches" :key="index">
-      {{ branch.name }}
+      <p>{{ branch.name }}</p>
     </div>
   </div>
 </template>
@@ -18,7 +18,7 @@ export default {
   methods: {
     ...mapActions(["fetchDataBranch"]),
   },
-  created() {
+  created: function () {
     this.fetchDataBranch(this.$route.params.index);
   },
 };

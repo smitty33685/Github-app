@@ -14,7 +14,6 @@ import UserPanel from "../components/UserPanel";
 import Branches from "../components/Branches";
 import Commits from "../components/Commits";
 import Back from "../components/Back";
-// import { mapActions, mapGetters } from "vuex";
 
 export default {
   name: "repodetail",
@@ -24,15 +23,6 @@ export default {
     Commits,
     Back,
   },
-  //   computed: {
-  //     ...mapGetters(["getBranches"]),
-  //   },
-  //   methods: {
-  //     ...mapActions(["fetchDataBranch"]),
-  //   },
-  //   created() {
-  //     this.fetchDataBranch(this.$route.params.index);
-  //   },
 };
 </script>
 

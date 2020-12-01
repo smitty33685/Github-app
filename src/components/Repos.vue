@@ -1,7 +1,5 @@
 <template>
   <ul class="list-repos">
-    <!-- <li v-for="(repo, index) in getRepos" :key="index" @click="showName">
-      {{ repo.name }} -->
     <router-link
       class="link"
       v-for="(repo, index) in getRepos"
@@ -9,7 +7,6 @@
       :to="`/repos/${repo.name}`"
       >{{ repo.name }}</router-link
     >
-    <!-- </li> -->
   </ul>
 </template>
 
@@ -25,7 +22,7 @@ export default {
     ...mapActions(["fetchData"]),
   },
 
-  created() {
+  created: function () {
     this.fetchData();
   },
 };
@@ -34,7 +31,7 @@ export default {
 <style scoped>
 .list-repos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
   list-style: none;
 }

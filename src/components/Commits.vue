@@ -2,7 +2,7 @@
   <div>
     <h2>Commits</h2>
     <div class="item" v-for="(commit, index) in getCommits" :key="index">
-      {{ commit.commit.message }}
+      <p>{{ commit.commit.author.date }}</p>
     </div>
   </div>
 </template>
@@ -18,7 +18,7 @@ export default {
   methods: {
     ...mapActions(["fetchDataCommit"]),
   },
-  created() {
+  created: function () {
     this.fetchDataCommit(this.$route.params.index);
   },
 };

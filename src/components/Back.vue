@@ -14,8 +14,11 @@ export default {
 .link {
   display: inline-block;
   text-decoration: none;
-  color: #333;
+  color: #666;
   margin-bottom: 2rem;
   margin-left: 2rem;
+  border: 1px #666 solid;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
 }
 </style>
