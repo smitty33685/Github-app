@@ -34,6 +34,7 @@ export default {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
   list-style: none;
+  margin: 0 1rem 2rem 1rem;
 }
 
 .link {

@@ -30,6 +30,12 @@ export default {
 .grid {
   display: grid;
   grid-template-columns: 40% 60%;
-  grid-gap: 2rem;
+  margin: 0 1rem;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 </style>

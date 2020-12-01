@@ -29,7 +29,7 @@ export default {
   color: #f4f4f4;
   border-radius: 2rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin: 0 1rem 2rem;
 }
 
 .user-nick {

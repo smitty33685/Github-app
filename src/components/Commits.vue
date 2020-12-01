@@ -31,7 +31,6 @@ export default {
 <style scoped>
 .item {
   background: #999;
-  margin: auto;
   padding: 0.7rem 1rem;
   margin: 0.3rem 0;
   border-radius: 1rem;
@@ -39,10 +38,17 @@ export default {
 
 h2 {
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 p {
   border-bottom: 1px #333 dashed;
   margin-bottom: 0.6rem;
+}
+
+@media (max-width: 800px) {
+  .item {
+    text-align: center;
+  }
 }
 </style>

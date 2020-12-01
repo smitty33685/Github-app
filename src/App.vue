@@ -23,9 +23,6 @@
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-}
-
-body {
   background: #dddada;
 }
 

@@ -28,12 +28,24 @@ export default {
 .item {
   background: #999;
   margin: auto;
-  padding: 0.3rem 1rem;
-  margin: 0.3rem 0;
+  padding: 0.6rem 1rem;
+  margin: 0.3rem 2rem 0.3rem 0;
   border-radius: 1rem;
+}
+
+.item:last-child {
+  margin-bottom: 2rem;
 }
 
 h2 {
   text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 800px) {
+  .item {
+    text-align: center;
+    margin: 0.3rem 0rem;
+  }
 }
 </style>
