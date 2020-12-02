@@ -10,7 +10,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .link {
   display: inline-block;
   text-decoration: none;

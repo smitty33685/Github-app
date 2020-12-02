@@ -26,7 +26,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .grid {
   display: grid;
   grid-template-columns: 40% 60%;

@@ -13,7 +13,7 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
 * {
   margin: 0;
   padding: 0;
@@ -40,16 +40,16 @@ body {
   background: #222;
   color: #f4f4f4;
   margin-bottom: 3rem;
-}
 
-.nav a {
-  text-decoration: none;
-  margin: 0 0.7rem;
-  color: #f4f4f4;
-  text-transform: uppercase;
-}
+  a {
+    text-decoration: none;
+    margin: 0 0.7rem;
+    color: #f4f4f4;
+    text-transform: uppercase;
 
-.nav a.router-link-exact-active {
-  color: #547dde;
+    &:hover {
+      color: #547dde;
+    }
+  }
 }
 </style>

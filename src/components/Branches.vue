@@ -24,21 +24,22 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .item {
   background: #999;
-  padding: 0.3rem 1rem;
+  padding: 0.5rem 1rem;
   margin: 0.3rem 2rem 0.3rem 0;
   border-radius: 1rem;
-}
 
-.item:last-child {
-  margin-bottom: 2rem;
+  &:last-child {
+    margin-bottom: 2rem;
+  }
 }
 
 h2 {
   text-align: center;
   margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
 @media (max-width: 800px) {

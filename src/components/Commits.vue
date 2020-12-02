@@ -28,22 +28,23 @@ export default {
 };
 </script>
   
-<style scoped>
+<style lang="scss" scoped>
 .item {
   background: #999;
   padding: 0.7rem 1rem;
   margin: 0.3rem 0;
   border-radius: 1rem;
+
+  p {
+    border-bottom: 1px #333 dashed;
+    margin-bottom: 0.6rem;
+  }
 }
 
 h2 {
   text-align: center;
   margin-bottom: 1rem;
-}
-
-p {
-  border-bottom: 1px #333 dashed;
-  margin-bottom: 0.6rem;
+  font-size: 2rem;
 }
 
 @media (max-width: 800px) {
