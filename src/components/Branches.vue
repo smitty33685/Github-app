@@ -27,8 +27,7 @@ export default {
 <style scoped>
 .item {
   background: #999;
-  margin: auto;
-  padding: 0.6rem 1rem;
+  padding: 0.3rem 1rem;
   margin: 0.3rem 2rem 0.3rem 0;
   border-radius: 1rem;
 }

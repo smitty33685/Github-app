@@ -20,7 +20,7 @@
   box-sizing: border-box;
 }
 
-#app {
+body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   background: #dddada;

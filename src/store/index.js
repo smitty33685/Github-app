@@ -12,6 +12,11 @@ export default new Vuex.Store({
       company: '@Juicymo',
       repos: 24,
     },
+    user2: {
+      name: 'Jiří Smitek',
+      email: 'j.smitek@seznam.cz',
+      phone: '232 718 999'
+    },
 
     repos: [],
     branches: [],

@@ -1,10 +1,18 @@
 <template>
   <div class="home">
     <div class="user-panel">
-      <div class="user-nick">{{ user.login }}</div>
-      <div class="user-name">{{ user.name }}</div>
-      <div class="user-company">{{ user.company }}</div>
-      <div class="user-repos">Repos: {{ user.repos }}</div>
+      <div class="user-nick">
+        <h2>{{ user.login }}</h2>
+      </div>
+      <div class="user-name">
+        <p>{{ user.name }}</p>
+      </div>
+      <div class="user-company">
+        <p>{{ user.company }}</p>
+      </div>
+      <div class="user-repos">
+        <p>Repos: {{ user.repos }}</p>
+      </div>
     </div>
   </div>
 </template>
@@ -23,8 +31,6 @@ export default {
 <style scoped>
 .user-panel {
   padding: 2rem;
-  /* background: #4700b3; */
-  /* background: #163172; */
   background: #163172;
   color: #f4f4f4;
   border-radius: 2rem;
@@ -35,5 +41,9 @@ export default {
 .user-nick {
   font-size: 2.5rem;
   text-transform: uppercase;
+}
+
+p {
+  margin-bottom: 0.3rem;
 }
 </style>

@@ -39,7 +39,6 @@ export default {
 
 .link {
   text-align: center;
-  /* background: #404040; */
   background: #333;
   color: #f4f4f4;
   padding: 1.3rem 1rem;
